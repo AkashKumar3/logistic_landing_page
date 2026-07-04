@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { Navbar } from '../../layouts/navbar/navbar';
 
 @Component({
   selector: 'app-gallary',
-  imports: [],
+  imports: [Navbar],
   templateUrl: './gallary.html',
   styleUrl: './gallary.css',
 })
-export class Gallary {}
+export class Gallary { }
