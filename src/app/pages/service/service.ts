@@ -1,9 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { Navbar } from '../../layouts/navbar/navbar';
+import { Footer } from '../../layouts/footer/footer';
 
 @Component({
   selector: 'app-service',
-  imports: [CommonModule],
+  imports: [CommonModule, Navbar, Footer],
   templateUrl: './service.html',
   styleUrl: './service.css',
 })

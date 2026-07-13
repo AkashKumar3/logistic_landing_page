@@ -1,0 +1,36 @@
+.nav-link {
+    position: relative;
+    color: white;
+    font-weight: 500;
+    transition: .3s;
+}
+
+.nav-link:hover {
+    color: #38bdf8;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 0;
+    height: 2px;
+    background: #38bdf8;
+    transition: .3s;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.mobile-link {
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    transition: .3s;
+}
+
+.mobile-link:hover {
+    color: #38bdf8;
+}

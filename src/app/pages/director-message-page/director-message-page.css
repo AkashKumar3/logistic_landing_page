@@ -1,0 +1,106 @@
+/* Floating Animation */
+
+@keyframes floating {
+
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-18px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+
+}
+
+.director-card {
+
+    perspective: 1500px;
+    animation: floating 5s ease-in-out infinite;
+    transition: all .7s ease;
+
+}
+
+.director-card:hover {
+
+    transform: rotateY(-12deg) rotateX(6deg) scale(1.03);
+
+}
+
+/* Shine */
+
+.shine {
+
+    position: absolute;
+    top: -120%;
+    left: -150%;
+    width: 70%;
+    height: 300%;
+    background: linear-gradient(120deg,
+            transparent,
+            rgba(255, 255, 255, .45),
+            transparent);
+
+    transform: rotate(25deg);
+    transition: .8s;
+
+}
+
+.director-card:hover .shine {
+
+    left: 180%;
+
+}
+
+/* Floating Square */
+
+@keyframes float {
+
+    0%,
+    100% {
+
+        transform: translateY(0px) rotate(12deg);
+
+    }
+
+    50% {
+
+        transform: translateY(-18px) rotate(28deg);
+
+    }
+
+}
+
+.animate-float {
+
+    animation: float 4s ease-in-out infinite;
+
+}
+
+/* Floating Circle */
+
+@keyframes bounceSlow {
+
+    0%,
+    100% {
+
+        transform: translateY(0);
+
+    }
+
+    50% {
+
+        transform: translateY(-20px);
+
+    }
+
+}
+
+.animate-bounce-slow {
+
+    animation: bounceSlow 5s ease-in-out infinite;
+
+}

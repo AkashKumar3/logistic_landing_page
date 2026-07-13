@@ -1,13 +1,16 @@
 import { Component } from '@angular/core';
 import { Navbar } from '../../layouts/navbar/navbar';
 import { Hero } from '../../components/hero/hero';
-import { Service } from '../../components/service/service';
+import { Service } from '../service/service';
 import { OurFacts } from '../../components/our-facts/our-facts';
+import { DirectorMessage } from '../../components/director-message/director-message';
+import { Footer } from '../../layouts/footer/footer';
+import { Clients } from '../../components/clients/clients';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [Navbar, Hero, Service, OurFacts],
+  imports: [Navbar, Hero, Footer, OurFacts, DirectorMessage, Clients],
   templateUrl: './home.html',
   styleUrl: './home.css',
 })

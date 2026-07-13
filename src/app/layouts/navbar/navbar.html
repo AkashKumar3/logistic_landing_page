@@ -1,63 +1,118 @@
-<nav class="fixed top-0 left-0 w-full z-100 backdrop-blur-xl bg-slate-950/55 border-b border-white/10">
-    <div class="max-w-7xl mx-auto h-20 px-6 flex items-center">
+<nav class="fixed top-0 left-0 w-full z-[100] backdrop-blur-xl bg-slate-950/55 border-b border-white/10">
 
+    <div class="relative max-w-8xl mx-auto h-20 px-4 sm:px-6 flex items-center">
 
-        <!-- Left: Logo -->
-        <div class="flex-1 flex justify-start">
-            <img src="SITE-LOGO.-1.png" alt="Company Logo"
-                class="z-20 h-10 sm:h-12 sm:w-14 md:h-14 md:w-14 lg:h-16 lg:w-16 rounded-full w-auto object-cover" />
+        <div
+            class="absolute w-[500px] h-[200px] bg-blue-600/20 blur-[150px] -left-40 -top-40 rounded-full pointer-events-none">
         </div>
-        <!-- Optional Blur Lights -->
-        <div class="absolute w-[500px] h-[200px] bg-blue-600/20 blur-[150px] -left-40 -top-40 rounded-full z-10"></div>
-        <div class="absolute w-[400px] h-[200px] bg-sky-500/20 blur-[150px] -right-28 -bottom-28 rounded-full z-10">
+        <div
+            class="absolute w-[400px] h-[200px] bg-sky-500/20 blur-[150px] -right-28 -bottom-28 rounded-full pointer-events-none">
         </div>
 
+        <div class="flex-1 flex justify-start relative z-20">
+            <a routerLink="/">
+                <img src="SITE-LOGO.-1.png" alt="Company Logo"
+                    class="h-10 w-10 rounded-full object-cover sm:h-12 sm:w-12 md:h-14 md:w-14 lg:h-16 lg:w-16">
+            </a>
+        </div>
 
-        <!-- Center: Navigation -->
-        <div class="hidden lg:flex flex-1 justify-center">
+        <div class="hidden lg:flex flex-1 justify-center relative z-20">
             <ul class="flex items-center gap-10">
+
                 <li>
-                    <a routerLink="/" class="relative text-white font-medium hover:text-sky-400 transition-all duration-300
-             after:absolute after:left-0 after:-bottom-2 after:h-0.5 after:w-0
-             after:bg-sky-400 after:transition-all hover:after:w-full">
+                    <a routerLink="/" class="nav-link">
                         Home
                     </a>
                 </li>
                 <li>
-                    <a routerLink="/about" class="relative text-white font-medium hover:text-sky-400 transition-all duration-300
-             after:absolute after:left-0 after:-bottom-2 after:h-0.5 after:w-0
-             after:bg-sky-400 after:transition-all hover:after:w-full">
+                    <a routerLink="/services" class="nav-link">
+                        Services
+                    </a>
+                </li>
+
+                <li>
+                    <a routerLink="/about" class="nav-link">
                         About Us
                     </a>
                 </li>
 
                 <li>
-                    <a routerLink="/gallary" class="relative text-white font-medium hover:text-sky-400 transition-all duration-300
-             after:absolute after:left-0 after:-bottom-2 after:h-0.5 after:w-0
-             after:bg-sky-400 after:transition-all hover:after:w-full">
-                        Gallary
+                    <a routerLink="/gallary" class="nav-link">
+                        Gallery
                     </a>
                 </li>
 
                 <li>
-                    <a routerLink="/contact" class="relative text-white font-medium hover:text-sky-400 transition-all duration-300
-             after:absolute after:left-0 after:-bottom-2 after:h-0.5 after:w-0
-             after:bg-sky-400 after:transition-all hover:after:w-full">
+                    <a routerLink="/contact" class="nav-link">
                         Contact
                     </a>
                 </li>
+
             </ul>
         </div>
 
-        <!-- Right: Placeholder / Mobile Menu -->
-        <div class="flex-1 flex justify-end">
-            <button class="lg:hidden text-white">
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24"
-                    stroke="currentColor">
+
+        <div class="flex-1 flex justify-end relative z-50">
+
+            <button type="button" (click)="toggleMobileMenu()" class="lg:hidden text-white">
+
+                <svg *ngIf="!isMobileMenuOpen" xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none"
+                    viewBox="0 0 24 24" stroke="currentColor">
+
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+
                 </svg>
+
+
+                <svg *ngIf="isMobileMenuOpen" xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none"
+                    viewBox="0 0 24 24" stroke="currentColor">
+
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+
+                </svg>
+
             </button>
+
         </div>
 
     </div>
+
+
+    <div *ngIf="isMobileMenuOpen"
+        class="absolute top-20 left-0 w-full lg:hidden bg-slate-950/95 backdrop-blur-xl border-t border-white/10">
+
+        <ul class="flex flex-col items-center gap-6 py-8">
+
+            <li>
+                <a routerLink="/" (click)="closeMobileMenu()" class="mobile-link">
+                    Home
+                </a>
+            </li>
+            <li>
+                <a routerLink="/services" (click)="closeMobileMenu()" class="mobile-link">
+                    Services
+                </a>
+            </li>
+            <li>
+                <a routerLink="/about" (click)="closeMobileMenu()" class="mobile-link">
+                    About Us
+                </a>
+            </li>
+
+            <li>
+                <a routerLink="/gallary" (click)="closeMobileMenu()" class="mobile-link">
+                    Gallery
+                </a>
+            </li>
+
+            <li>
+                <a routerLink="/contact" (click)="closeMobileMenu()" class="mobile-link">
+                    Contact
+                </a>
+            </li>
+
+        </ul>
+
+    </div>
+
 </nav>
