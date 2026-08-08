@@ -1,6 +1,4 @@
 <section class="hero relative h-screen overflow-hidden">
-
-    <!-- BACKGROUND SLIDER -->
     <div class="absolute inset-0">
 
         <img *ngFor="let image of heroImages; let i = index" [src]="image"
@@ -8,47 +6,21 @@
             [class.opacity-100]="currentSlide === i" [class.opacity-0]="currentSlide !== i"
             [class.scale-110]="currentSlide === i" [class.scale-100]="currentSlide !== i">
 
-        <!-- DARK OVERLAY -->
         <div class="absolute inset-0 bg-slate-950/70"></div>
 
     </div>
 
-    <!-- CONTENT -->
     <div class="relative z-10 w-[92%] mx-auto h-full flex items-center">
 
         <div class="max-w-2xl text-white">
-
-            <!-- TAG -->
-            <!-- <span
-                class="inline-flex items-center gap-3 px-5 py-3 rounded-full  bg-blue-600/10 border border-sky-400/30 text-sm">
-
-                <img src="SITE-LOGO.-1.png" class="h-7 w-7 rounded-full object-cover" />
-                Logistics Solutions
-
-            </span> -->
-
-            <!-- TITLE -->
             <h1 class="text-5xl md:text-7xl font-bold mt-6 leading-tight animate-fadeIn">
                 Logistics Made <span class="text-sky-400">Smarter</span>
             </h1>
 
-            <!-- DESCRIPTION -->
             <p class="mt-6 text-slate-300 text-lg max-w-xl animate-fadeIn">
                 AI-powered tracking, warehouse automation, and global logistics solutions.
             </p>
 
-            <!-- BUTTONS -->
-            <!-- <div class="flex gap-4 mt-8 animate-fadeIn">
-                <button class="px-6 py-3 rounded-full bg-blue-600 hover:bg-blue-700 transition">
-                    Track Shipment →
-                </button>
-
-                <button class="px-6 py-3 rounded-full border border-white/20 hover:border-sky-400">
-                    Get Quote
-                </button>
-            </div> -->
-
-            <!-- COUNTERS -->
             <div class="flex gap-12 mt-16">
 
                 <div>
@@ -62,7 +34,13 @@
                     <h2 class="text-3xl text-sky-400 font-bold">
                         {{ countries }}+
                     </h2>
-                    <p class="text-slate-400">Countries</p>
+                    <p class="text-slate-400">Districts</p>
+                </div>
+                <div>
+                    <h2 class="text-3xl text-sky-400 font-bold">
+                        {{ pinCode }}+
+                    </h2>
+                    <p class="text-slate-400">Pin Code</p>
                 </div>
 
                 <div>

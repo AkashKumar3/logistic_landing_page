@@ -20,7 +20,9 @@ export class Hero implements OnInit, OnDestroy {
 
   shipments = 0;
   countries = 0;
+  pinCode = 0
   success = 0;
+
 
   private intervalId: any;
   private counterInterval: any;
@@ -61,21 +63,27 @@ export class Hero implements OnInit, OnDestroy {
 
     let s = 0;
     let c = 0;
+    let pin = 0;
     let p = 0;
+
 
     this.counterInterval = setInterval(() => {
 
       if (s < 12000) s += 200;
-      if (c < 85) c += 2;
-      if (p < 99) p += 1;
+      if (c < 120) c += 2;
+      if (pin < 2200) pin += 36;
+      if (p < 99) p += 1.5;
+
 
       this.shipments = s;
       this.countries = c;
+      this.pinCode = pin;
       this.success = p;
+
 
       this.cdr.markForCheck(); // 🔥 IMPORTANT
 
-      if (s >= 12000 && c >= 85 && p >= 99) {
+      if (s >= 12000 && c >= 120 && pin >= 2200 && p >= 99) {
         clearInterval(this.counterInterval);
       }
 
