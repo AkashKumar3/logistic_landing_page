@@ -12,27 +12,27 @@ export class Clients {
 
     {
       name: 'Blinkit',
-      logo: 'assets/images/clients/blinkit.png'
+      logo: 'assets/images/clients/blinkit.svg'
     },
 
     {
       name: 'Zepto',
-      logo: 'assets/images/clients/zepto.png'
+      logo: 'assets/images/clients/zepto.svg'
     },
 
     {
       name: 'Zomato',
-      logo: 'assets/images/clients/zomato.png'
+      logo: 'assets/images/clients/Zomato.avif'
     },
 
     {
       name: 'Flipkart',
-      logo: 'assets/images/clients/flipkart.png'
+      logo: 'assets/images/clients/flipkart.svg'
     },
 
     {
       name: 'Swiggy',
-      logo: 'assets/images/clients/swiggy.png'
+      logo: 'assets/images/clients/swiggy.svg'
     },
 
     {
@@ -57,7 +57,7 @@ export class Clients {
 
     {
       name: 'Vishal Mega Mart',
-      logo: 'assets/images/clients/vishal-mega-mart.png'
+      logo: 'assets/images/clients/vishalmegamart.svg'
     },
 
     {
@@ -72,7 +72,7 @@ export class Clients {
 
     {
       name: 'Reliance',
-      logo: 'assets/images/clients/reliance.png'
+      logo: 'assets/images/clients/reliance.avif'
     },
 
     {
