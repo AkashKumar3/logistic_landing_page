@@ -30,7 +30,7 @@ export class OurFacts implements AfterViewInit, OnDestroy {
     { icon: '⭐', title: 'Quality Service', value: 100, currentValue: 0 },
     { icon: '😊', title: 'Customer Satisfaction', value: 100, currentValue: 0 },
     { icon: '🚚', title: 'On-Time Delivery', value: 99, currentValue: 0 },
-    { icon: '🏆', title: 'Years Experience', value: 15, currentValue: 0 }
+    { icon: '🏆', title: 'Years Experience', value: 5, currentValue: 0 }
   ];
 
   private observer!: IntersectionObserver;
