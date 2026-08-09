@@ -98,4 +98,25 @@
 
     }
 
+
+    .client-card img.w-20 {
+
+        width: 60px;
+
+    }
+
+
+    .client-card img.w-32 {
+
+        width: 96px;
+
+    }
+
+
+    .client-card img.w-40 {
+
+        width: 128px;
+
+    }
+
 }

@@ -49,4 +49,43 @@ export class Service {
 
   ];
 
+  industries = [
+
+    {
+      name: 'FMCG',
+      icon: 'fa-solid fa-basket-shopping'
+    },
+
+    {
+      name: 'Consumer Durable',
+      icon: 'fa-solid fa-mobile-screen-button'
+    },
+
+    {
+      name: 'Automotive',
+      icon: 'fa-solid fa-car-side'
+    },
+
+    {
+      name: 'Electronics',
+      icon: 'fa-solid fa-microchip'
+    },
+
+    {
+      name: 'E-Commerce',
+      icon: 'fa-solid fa-cart-shopping'
+    },
+
+    {
+      name: 'Pharmaceuticals',
+      icon: 'fa-solid fa-pills'
+    },
+
+    {
+      name: 'Industrial Manufacturing',
+      icon: 'fa-solid fa-industry'
+    }
+
+  ];
+
 }

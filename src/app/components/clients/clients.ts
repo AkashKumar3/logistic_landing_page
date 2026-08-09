@@ -27,12 +27,14 @@ export class Clients {
 
     {
       name: 'Flipkart',
-      logo: 'assets/images/clients/flipkart.svg'
+      logo: 'assets/images/clients/flipkart.svg',
+      logoClass: 'h-28 w-60'
     },
 
     {
       name: 'Swiggy',
-      logo: 'assets/images/clients/swiggy.svg'
+      logo: 'assets/images/clients/swiggy.svg',
+      logoClass: 'h-20 w-32'
     },
 
     {
@@ -47,7 +49,8 @@ export class Clients {
 
     {
       name: 'Big Basket',
-      logo: 'assets/images/clients/bigbasket.png'
+      logo: 'assets/images/clients/bigbasket.png',
+      logoClass: 'h-20 w-32'
     },
 
     {
@@ -57,7 +60,8 @@ export class Clients {
 
     {
       name: 'Vishal Mega Mart',
-      logo: 'assets/images/clients/vishalmegamart.svg'
+      logo: 'assets/images/clients/vishalmegamart.svg',
+      logoClass: 'h-20 w-32'
     },
 
     {

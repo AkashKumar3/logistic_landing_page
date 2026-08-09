@@ -27,10 +27,10 @@ export class OurFacts implements AfterViewInit, OnDestroy {
   @ViewChild('factsSection') factsSection!: ElementRef;
 
   facts: Fact[] = [
-    { icon: '⭐', title: 'Quality Service', value: 100, currentValue: 0 },
-    { icon: '😊', title: 'Customer Satisfaction', value: 100, currentValue: 0 },
-    { icon: '🚚', title: 'On-Time Delivery', value: 99, currentValue: 0 },
-    { icon: '🏆', title: 'Years Experience', value: 5, currentValue: 0 }
+    { icon: 'fa-solid fa-award', title: 'Quality Service', value: 100, currentValue: 0 },
+    { icon: 'fa-solid fa-face-smile', title: 'Customer Satisfaction', value: 100, currentValue: 0 },
+    { icon: 'fa-solid fa-truck-fast', title: 'On-Time Delivery', value: 99, currentValue: 0 },
+    { icon: 'fa-solid fa-trophy', title: 'Years Experience', value: 5, currentValue: 0 }
   ];
 
   private observer!: IntersectionObserver;
