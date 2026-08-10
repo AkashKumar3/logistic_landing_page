@@ -28,7 +28,7 @@ export class Clients {
     {
       name: 'Flipkart',
       logo: 'assets/images/clients/flipkart.svg',
-      logoClass: 'h-28 w-60'
+      logoClass: 'h-34 w-64'
     },
 
     {
@@ -66,7 +66,7 @@ export class Clients {
 
     {
       name: 'Lividus Pharmaceutical',
-      logo: 'assets/images/clients/lividus.png'
+      logo: 'assets/images/clients/lividus.jpeg'
     },
 
     {
@@ -79,10 +79,10 @@ export class Clients {
       logo: 'assets/images/clients/reliance.avif'
     },
 
-    {
-      name: 'More Retail',
-      logo: 'assets/images/clients/more-retail.png'
-    }
+    // {
+    //   name: 'More Retail',
+    //   logo: 'assets/images/clients/more-retail.png'
+    // }
 
   ];
 
